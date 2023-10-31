@@ -1,2 +1,11 @@
 ﻿
 - Went to Startip.cs commented out (/*options => options.SignIn.RequireConfirmedAccount = true*/)
+- Created a new git repo and connected to GitHub
+- Went to Bootstrap choose the theme (Flatly)
+- Downloaded the bootstrap.css file
+- Went ti the wwwroots folder -> dist - css -> Changed the name of the default boostrap.css file
+- Added the downloaded Bootstrap.css for my theme.
+- Chnaged the content from site.css file from the provided assignment 2 folder
+- In the views folder -> _layout.cshtml -> changed the file name to bootstrap.css
+- changed the nav (navbar-dark bg-primary)
+- REmoved text-dark from line 23 and 25
