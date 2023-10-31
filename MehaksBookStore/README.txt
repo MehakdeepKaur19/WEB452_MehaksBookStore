@@ -74,3 +74,9 @@ Moved the _ViewStart and _ViewStart.cshtml into Customer folder.
 Ran the application and it worked.
 Now created a new area named Admin.
 Updated the Github repos.
+
+1448
+Starting with Part 2 of the Assignmnet.
+Checked the appsettings.json with the slides.
+Then added the migrations through console screen with the command add-migration AddDefaultIdentityMigration
+**The most important part for this running command is to change the default project for this to MehaksBooks.DataAccess in console screen.**
