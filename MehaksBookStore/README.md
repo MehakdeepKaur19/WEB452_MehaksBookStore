@@ -1,1 +1,1 @@
-﻿
+﻿This project is created on the ideas of creatin a site to display books and have a customer interaction.
