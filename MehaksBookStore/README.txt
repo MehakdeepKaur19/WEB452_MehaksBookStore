@@ -89,7 +89,17 @@ Updated database and checked sql server.
 Added new class to .Models project named Category.cs.
 Then add migration through console .DataAccess project with command: add-migration AddCategoryToDb
 Now modify the new migration.
+Also added namespace and content to ApplicaionDbContext.cs
+        public DbSet<Category> Categories { get; set; }
 
 1121
 Try to readd the migration but there is a dulplication error to resolve it I delete and recreated the migration.
 Commint it to Github.
+
+1124
+Now let's move to part 2.
+Created new folder in .DataAccess project named Respository then further a subfolder name IRespository.
+Then added a new interface name IRepository.cs and modify it to add accordingly.
+
+1225
+Created files in subfolder namely ICategoryRepository.cs that is an interface and a new file in folder CategoryRepository.cs and modify data.
