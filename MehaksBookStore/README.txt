@@ -80,3 +80,16 @@ Starting with Part 2 of the Assignmnet.
 Checked the appsettings.json with the slides.
 Then added the migrations through console screen with the command add-migration AddDefaultIdentityMigration
 **The most important part for this running command is to change the default project for this to MehaksBooks.DataAccess in console screen.**
+
+2023-11-02 1054
+Came back to work!!
+Updated database and checked sql server.
+
+1106
+Added new class to .Models project named Category.cs.
+Then add migration through console .DataAccess project with command: add-migration AddCategoryToDb
+Now modify the new migration.
+
+1121
+Try to readd the migration but there is a dulplication error to resolve it I delete and recreated the migration.
+Commint it to Github.
