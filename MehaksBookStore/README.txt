@@ -103,3 +103,6 @@ Then added a new interface name IRepository.cs and modify it to add accordingly.
 
 1225
 Created files in subfolder namely ICategoryRepository.cs that is an interface and a new file in folder CategoryRepository.cs and modify data.
+
+1304
+Created ISP_Call interface and SP_Call.cs class and made alterations.
