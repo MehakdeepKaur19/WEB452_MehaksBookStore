@@ -1,4 +1,5 @@
 ﻿using MehaksBooks.DataAccess.Repository.IRepository;
+using MehaksBooks.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,22 @@ namespace MehaksBookStore.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
+            return View();
+        }
+        public IActionResult Upsert(int? id) //action method for Upsert
+        {
+            Category category = new Category(); //using MehakBooks.Models; 
+            if(id == null)
+            {
+                //this is for create
+                return View(category);
+            }
+            //this for the ediit
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if(category == null)
+            {
+                return NotFound();
+            }
             return View();
         }
 
