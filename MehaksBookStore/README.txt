@@ -114,3 +114,7 @@ modeiffied it and linked it through StartUp.cs
 
 1606
 Added a new controller named CategoryController.cs
+
+1619
+Added a new index page for category added the content provided in CategoryIndex.txt.
+Modified the _Layout.cshtml to show in the notification.
