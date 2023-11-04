@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MehaksBooks.DataAccess.Repository
 {
-    public class UnitOfWork //make themethod public to access the class
+    public class UnitOfWork : IUnitOfWork  //make themethod public to access the class
     {
         private readonly ApplicationDbContext _db; //the using statement
         public UnitOfWork(ApplicationDbContext db) //constructor to use DI and inject in the repositories

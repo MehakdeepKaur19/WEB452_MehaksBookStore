@@ -111,3 +111,6 @@ Updated SP_Call.cs.
 2023-11-04 1540
 Added UnitOfWork class and interface
 modeiffied it and linked it through StartUp.cs
+
+1606
+Added a new controller named CategoryController.cs
