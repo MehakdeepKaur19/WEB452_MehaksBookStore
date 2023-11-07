@@ -7,7 +7,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace MehaksBooks.DataAccess.Repository
+namespace MehaksBooks.DataAccess.Repository.IRepository
 {
     public class Repository<T> : IRepository<T> where T : class
     {
@@ -50,11 +50,6 @@ namespace MehaksBooks.DataAccess.Repository
                 return orderBy(query).ToList();
             }
             return query.ToList();      // returns the IEnumerable based on the conditions of the query
-        }
-
-        public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IQueryable<T>> orderBy = null, string includeProperties = null)
-        {
-            throw new NotImplementedException();
         }
 
         public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null, string includeProperties = null)

@@ -118,3 +118,9 @@ Added a new controller named CategoryController.cs
 1619
 Added a new index page for category added the content provided in CategoryIndex.txt.
 Modified the _Layout.cshtml to show in the notification.
+
+2023-11-06 1645
+Moving forward added new editing and creating concept to the file by editing to work on it.
+
+1720
+Now added content to category.js and commit the code.

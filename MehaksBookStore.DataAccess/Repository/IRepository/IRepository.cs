@@ -6,22 +6,24 @@ using System.Text;
 
 namespace MehaksBooks.DataAccess.Repository.IRepository
 {
-    public interface IRepository<T> where T: class
+    public interface IRepository<T> where T : class
     {
-        T Get(int Id); //Retrieve a category from the database by id
-        //List of Categories based on requirements
+        T Get(int id);
+
         IEnumerable<T> GetAll(
             Expression<Func<T, bool>> filter = null,
-            Func<IQueryable<T>, IQueryable<T>> orderBy = null,
-            string includeProperties = null); //useful for foreign key references
-
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
+            string includeProperties = null
+            );
         T GetFirstOrDefault(
             Expression<Func<T, bool>> filter = null,
             string includeProperties = null
             );
-        void Add(T entity); //to add an entity
-        void Remove(int id); //to remove an object or category
-        void Remove(T entity); //another way to remove an object
-        void RemoveRange(IEnumerable<T> entity); //remove a complete range of entities
+
+        void Add(T entity);
+        void Remove(int id);
+        void Remove(T entity);
+        void RemoveRange(IEnumerable<T> entity);
+
     }
 }
