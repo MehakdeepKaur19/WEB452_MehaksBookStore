@@ -1,10 +1,6 @@
 ﻿using MehaksBooks.DataAccess.Repository.IRepository;
 using MehaksBooks.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MehaksBookStore.Areas.Admin.Controllers
 {
@@ -21,32 +17,67 @@ namespace MehaksBookStore.Areas.Admin.Controllers
         {
             return View();
         }
-        public IActionResult Upsert(int? id) //action method for Upsert
+        public IActionResult Upsert(int? id) //action method for upsert
         {
-            Category category = new Category(); //using MehakBooks.Models; 
-            if(id == null)
+            Category category = new Category();//using NiharBooks.Models;
+            if (id == null)
             {
-                //this is for create
+                // this is to creatte
                 return View(category);
             }
-            //this for the ediit
+
+            //this for the edit
             category = _unitOfWork.Category.Get(id.GetValueOrDefault());
-            if(category == null)
+            if (category == null)
             {
                 return NotFound();
             }
-            return View();
+            return View(category);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Category category)
+        {
+            if (ModelState.IsValid)
+            {
+                if (category.Id == 0)
+                {
+                    _unitOfWork.Category.Add(category);
+
+                }
+                else
+                {
+                    _unitOfWork.Category.Update(category);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(category);
         }
 
-        //API calls here
+
+        //API Calls
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll()
         {
-            //return NotFound();
             var allObj = _unitOfWork.Category.GetAll();
             return Json(new { data = allObj });
         }
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var objFromDb = _unitOfWork.Category.Get(id);
+            if (objFromDb == null)
+            {
+                return Json(new { success = false, message = "Error while deleteing" });
+            }
+            _unitOfWork.Category.Remove(objFromDb);
+            _unitOfWork.Save();
+            return Json(new { success = true, message = "Delete Successful" });
+        }
         #endregion
     }
+
 }
