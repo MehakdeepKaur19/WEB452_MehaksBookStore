@@ -88,6 +88,7 @@ Updated database and checked sql server.
 1106
 Added new class to .Models project named Category.cs.
 Then add migration through console .DataAccess project with command: add-migration AddCategoryToDb
+Named: 20231102151912_AddCategoryToDb.cs 
 Now modify the new migration.
 Also added namespace and content to ApplicaionDbContext.cs
         public DbSet<Category> Categories { get; set; }
