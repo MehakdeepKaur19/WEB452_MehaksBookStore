@@ -135,4 +135,5 @@ The index we got for migration was : 20231115205934
 1641
 Added new repository for CoverType and added the content similar for category and made changes according to the file.
 Then made changes in UnitOfWork class and IUnitOfWork interface to add CoverType into them.
+Then I ran into error since I have to make changes in ApplicationBdContent.
 Now update the database and save the changes.
