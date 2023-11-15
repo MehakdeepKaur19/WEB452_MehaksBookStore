@@ -125,3 +125,14 @@ Moving forward added new editing and creating concept to the file by editing to 
 
 1720
 Now added content to category.js and commit the code.
+
+2023-11-15 1637
+(Section 1)
+As I begin with part 1 the first step was to create new model class names CoverType.cs and made changes into it as we have to Category.cs
+After doing that I added migration name in DataAccess Project with the name AddCoverTypeToDb.
+The index we got for migration was : 20231115205934
+
+1641
+Added new repository for CoverType and added the content similar for category and made changes according to the file.
+Then made changes in UnitOfWork class and IUnitOfWork interface to add CoverType into them.
+Now update the database and save the changes.
