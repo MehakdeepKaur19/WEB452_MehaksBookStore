@@ -137,3 +137,47 @@ Added new repository for CoverType and added the content similar for category an
 Then made changes in UnitOfWork class and IUnitOfWork interface to add CoverType into them.
 Then I ran into error since I have to make changes in ApplicationDbContent.
 Now update the database and save the changes.
+
+1735
+Added ICoverTypeRepository and CoverTypeRepository to link the methods in it.
+Update database and run the application to see it's functionality.
+
+2023-11-21 0835
+Added a new class in .Models Project named Product.
+Change the code according to the provided code and move ahead.
+Added reference to this file in ApplicationDbContext.cs.
+Tried to add migration for products but ran into an error.
+
+0915
+Error was that I ran the command in wrong project then I changed the project name to DataAccess and ran the command again.
+Then I got the migration that wworks with index: 202311211140317 
+name is addProductToDb
+Then I tried to update the database but crashed into an error again.
+
+0945
+After checking the code I realised i have to make some changes and migration and update database with it.
+And finally it worked.
+Then added IProductReposiory and ProductRepository and modify update method in it.
+Then added product to IUnitOfWork and UnitOfWork.
+Push to github.
+
+1024
+(Section 2)
+Added ProductController to Area/Admin
+then change it to the according code.
+Created ProductVM class in ViewModel folder To hold Product object and select list for Category and CoverType.
+For this class we have to download a new packagenamed Microsoft.AspNetCore.Mvc.ViewFeatures.
+Added the code to this class but commented the Upsert method as instructed.
+Then added API Calls in the file.
+
+1100 
+Added Index View in Product Folder.
+Copied the code from Category Index page and made suggested changes to add the data according to products.
+Added product.js and modify it similar to other js files.
+Tried to run the application but it gets an exception and in the instructions it is said we should continue even if we have an exception.
+
+1115
+(Section 3)
+Created a new view named Upsert.cshtml and add the provided code.
+made changes in script part of the code and run the code. It still shows the exception but it's okay.
+Going to ProductController uncomment the upsert method and add a new post method as well into it.
