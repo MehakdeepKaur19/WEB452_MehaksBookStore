@@ -19,7 +19,7 @@ namespace MehaksBookStore.Areas.Admin.Controllers
         }
         public IActionResult Upsert(int? id) //action method for upsert
         {
-            Category category = new Category();//using NiharBooks.Models;
+            Category category = new Category();
             if (id == null)
             {
                 // this is to creatte

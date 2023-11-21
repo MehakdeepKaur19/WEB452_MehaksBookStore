@@ -11,6 +11,5 @@ namespace MehaksBooks.DataAccess.Repository.IRepository
     {
         void Update(Product product);
     }
-    {
-    }
+    
 }
