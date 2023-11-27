@@ -19,7 +19,7 @@ namespace MehaksBooks.Models
         public string Author { get; set; }
         [Required]
         [Range(1, 10000)]
-        public double ListPrice { get; set; }
+        public double Price { get; set; }
         public string ImageUrl { get; set; }
 
         [Required]
@@ -29,7 +29,7 @@ namespace MehaksBooks.Models
 
         [Required]
         public int CoverTypeId { get; set; }    //foreign key reference
-        [ForeignKey("CategoryId")]
+        [ForeignKey("CoverTypeId")]
         public CoverType CoverType { get; set; }
     }
 }

@@ -181,3 +181,11 @@ Tried to run the application but it gets an exception and in the instructions it
 Created a new view named Upsert.cshtml and add the provided code.
 made changes in script part of the code and run the code. It still shows the exception but it's okay.
 Going to ProductController uncomment the upsert method and add a new post method as well into it.
+
+2023-11-27
+1301
+Started with Part 4 of Assignment 2.
+Started with Product.cs by changing the ListPrice to Price and added new migration to update it.
+Made changes in ProductRepository for the above changes and then went to Upsert.cshtml to make for the name as well.
+I even have to change the strike it shows in it.
+I add content in ProductController as well.
