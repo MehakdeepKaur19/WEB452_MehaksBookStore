@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MehaksBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231127182611_addProductToDb2")]
+    [Migration("20231128174226_addProductToDb2")]
     partial class addProductToDb2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -92,6 +92,8 @@ namespace MehaksBooks.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("CoverTypeId");
 
                     b.ToTable("Products");
                 });
@@ -306,7 +308,7 @@ namespace MehaksBooks.DataAccess.Migrations
 
                     b.HasOne("MehaksBooks.Models.CoverType", "CoverType")
                         .WithMany()
-                        .HasForeignKey("CategoryId")
+                        .HasForeignKey("CoverTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

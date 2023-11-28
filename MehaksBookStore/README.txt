@@ -189,3 +189,8 @@ Started with Product.cs by changing the ListPrice to Price and added new migrati
 Made changes in ProductRepository for the above changes and then went to Upsert.cshtml to make for the name as well.
 I even have to change the strike it shows in it.
 I add content in ProductController as well.
+
+2023-11-28 1252
+-Tried checking my application but it ran into an error so have to resolve it.
+I tried adding migration again and it worked finally and forget to add some code in ProductController.cs so I have to do that too.
+Now my application is wrking perfectly fine with just that one migration.
