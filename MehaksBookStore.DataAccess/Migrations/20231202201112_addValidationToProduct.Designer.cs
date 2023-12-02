@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MehaksBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231128174226_addProductToDb2")]
-    partial class addProductToDb2
+    [Migration("20231202201112_addValidationToProduct")]
+    partial class addValidationToProduct
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

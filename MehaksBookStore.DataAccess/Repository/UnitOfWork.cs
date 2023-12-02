@@ -18,7 +18,6 @@ namespace MehaksBooks.DataAccess.Repository
             Product = new ProductRepository(_db);
             SP_Call = new SP_Call(_db);
         }
-
         public ICategoryRepository Category { get; private set; }
         public ICoverTypeRepository CoverType { get; private set; }
         public IProductRepository Product { get; private set; }

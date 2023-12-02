@@ -194,3 +194,7 @@ I add content in ProductController as well.
 -Tried checking my application but it ran into an error so have to resolve it.
 I tried adding migration again and it worked finally and forget to add some code in ProductController.cs so I have to do that too.
 Now my application is wrking perfectly fine with just that one migration.
+
+2023-12-2 1530
+As I was doing the last part I raninto an issue with migrations so I have to redo part 3 again as I don't wan to mess my code.
+I followed the sme steps and redid all my work again.
