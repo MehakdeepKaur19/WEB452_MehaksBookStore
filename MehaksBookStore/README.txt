@@ -198,3 +198,7 @@ Now my application is wrking perfectly fine with just that one migration.
 2023-12-2 1530
 As I was doing the last part I raninto an issue with migrations so I have to redo part 3 again as I don't wan to mess my code.
 I followed the sme steps and redid all my work again.
+Rebuid the migrations namely: 20231202195358 and 20231202201112 for addProductToDb and addValidationToProduuct simultaneously.
+
+2023-12-05 1014
+Last commit with updating my readme file for the last detail parts.
